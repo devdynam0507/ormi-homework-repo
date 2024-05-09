@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <title>air bnb</title>
+
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+
+      nav {
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid #F7F7F7;
+      }
+
+      .nav-list {
+        padding-left: 8rem;
+        padding-right: 8rem;
+        list-style: none;
+      }
+
+      .logo {
+        font-size: 18px;
+        font-weight: 800;
+        color: palevioletred;
+      }
+
+      main {
+        padding-left: 8rem;
+        padding-right: 8rem;
+      }
+
+      .event-article {
+        display: flex; 
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .carousel {
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+      }
+
+      .carousel .carousel-card {
+        display: flex;
+        flex-direction: column;
+        width: 550px;
+        height: 330px;
+        padding: 2rem;
+        justify-content: space-between;
+      }
+
+      .carousel-card .heading {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .label {
+        padding: 8px;
+        border-radius: 25px;
+        border: 1px solid #f7f7f7;
+        font-size: 12px;
+        font-weight: 400;
+        color: #1d1c1c;
+      }
+
+      .graylabel {
+        padding: 8px;
+        border-radius: 25px;
+        background-color: #ddd;
+        font-size: 12px;
+        font-weight: 400;
+        color: #1d1c1c;
+      }
+
+      .label-group {
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        margin-top: 1rem;
+        align-items: center;
+      }
+
+      .label-group > .group {
+        display: inherit;
+        flex-direction: inherit;
+        gap: inherit;
+        align-items: center;
+      }
+
+      .button {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 12px;
+        padding-right: 12px;
+        font-size: 14px;
+        font-weight: 500;
+        width: fit-content;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+
+      .content-article {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .contents {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+
+      .content-card {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        width: 200px;
+        height: fit-content;
+      }
+
+      .card-image {
+        max-width: 200px;
+        height: 300px;
+      }
+      
+      .card-rating {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 4px;
+        font-size: 16px;
+        font-weight: 400;
+        width: 100%;
+      }
+
+      .subtext {
+       font-size: 14px;
+       color: #b0b0b0;
+       font-weight: 400; 
+      }
+
+      footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: calc(100% - 16rem);
+        height: 350px;
+        background-color: hsl(0, 0%, 95%);
+        margin-top: 10rem;
+        padding-top: 4rem;
+        padding-left: 8rem; padding-right: 8rem;
+      }
+
+      .footer-list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        list-style: none;
+        font-size: 16px;
+        font-weight: 400;
+      }
+
+      .footer-list > li {
+        cursor: pointer;
+        list-style: none;
+      }
+
+      .footer-left, 
+      .footer-right > li {
+        cursor: pointer;
+        list-style: none;
+        padding: 0; margin: 0;
+        font-size: 14px;
+        margin-top: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav style="display: flex; justify-content: space-between; flex-direction: row;">
+        <li class="nav-list">
+          <span class="logo">airbnb</span>
+        </li>
+        <li class="nav-list" style="display: flex; flex-direction: row; align-items: center; gap: 1rem;">
+          <span style="font-size: 14px; font-weight: 400; color: #1d1c1c;">당신의 공간을 에어비앤비 하세요.</span>
+          <span style="font-size: 14px; font-weight: 500; color: #1d1c1c; cursor: pointer;">로그인</span>
+        </li>
+      </nav>
+    </header>
+    <main>
+      <article class="event-article" style="position: relative;">
+        <h1>이번 주 신규 등록 체험</h3>
+        <div class="carousel">
+          <div class="carousel-card" style="background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(52,52,173,1) 35%, rgba(0,212,255,1) 100%); border-radius: 1rem;">
+            <div class="heading">
+              <span style="font-size: 14px; font-weight: 400; color: #fff; margin-bottom: 4px;">컬렉션</span>
+              <h2 style="padding: 0; margin: 0; color: #fff">전세계 인기체험</h2>
+            </div>
+            <div class="button" style="background-color: #fff;">
+              <span>모두 보기</span>
+            </div>
+          </div>
+
+          <div class="carousel-card" style="background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(61,173,52,1) 35%, rgba(0,212,255,1) 100%); border-radius: 1rem;">
+            <div class="heading">
+              <span style="font-size: 14px; font-weight: 400; color: #fff; margin-bottom: 4px;">컬렉션</span>
+              <h2 style="padding: 0; margin: 0; color: #fff">Easy for itinerary<br/>planning</h2>
+            </div>
+            <div class="button" style="background-color: #fff;">
+              <span>모두 보기</span>
+            </div>
+          </div>
+
+          <div class="carousel-card" style="background: linear-gradient(90deg, rgba(2,255,36,1) 0%, rgba(61,173,52,1) 35%, rgba(0,128,255,1) 100%); border-radius: 1rem;">
+            <div class="heading">
+              <span style="font-size: 14px; font-weight: 400; color: #fff; margin-bottom: 4px;">컬렉션</span>
+              <h2 style="padding: 0; margin: 0; color: #fff">팀워크를 다지기에<br/>최적인 경험</h2>
+            </div>
+            <div class="button" style="background-color: #fff;">
+              <span>모두 보기</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="label-group">
+        <div class="group">
+          <div class="label">
+            <span>날짜</span>
+          </div>
+          <div class="label">
+            <span>일행당 인원 수</span>
+          </div>
+          <div class="label">
+            <span>필터 추가하기</span>
+          </div>
+        </div>
+        <div style="width: 1px; height: 40px; background-color: rgb(220, 202, 202);"></div>
+        <div class="group">
+          <div class="graylabel">
+            <span>단체로 즐기기에 적합</span>
+          </div>
+          <div class="graylabel">
+            <span>가족이 즐기기에 적합</span>
+          </div>
+          <div class="graylabel">
+            <span>동물</span>
+          </div>
+          <div class="graylabel">
+            <span>예술 및 글쓰기</span>
+          </div>
+          <div class="graylabel">
+            <span>베이킹</span>
+          </div>
+          <div class="graylabel">
+            <span>쿠킹</span>
+          </div>
+          <div class="graylabel">
+            <span>댄스</span>
+          </div>
+          <div class="graylabel">
+            <span>음주</span>
+          </div>
+          <div class="graylabel">
+            <span>음악</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="content-article" style="margin-top: 3rem;">
+        <h1>전 세계 현지 호스트의 도움을 받아 여행을 계획해보세요</h3>
+
+        <div style="display: flex; gap: 16px; flex-direction: row; align-items: center;">
+
+          <div class="contents">
+            <div class="content-card">
+              <div class="card-image">
+                <img width="200" height="300" src="https://img.freepik.com/free-photo/portrait-photo_144627-46580.jpg" alt="이미지"/>
+              </div>
+              <div class="card-rating">
+                <span>
+                  ★ 5.0
+                </span>
+                <span class="subtext">
+                  (62)
+                </span>
+                <div style="display: block; width: 3px; height: 3px; background-color: #ddd; border-radius: 50px; margin-left: 4px; margin-right: 4px;"></div>
+                <span class="subtext">
+                  일본
+                </span>
+              </div>
+              <div>
+                <span>현지 전문가와 함께하는 완벽한 맞춤 일본 여행 계획을 세워보...</span>
+              </div>
+              <div>
+                <span style="font-weight: 500;">최저가 ₩59,216 / 인</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contents">
+            <div class="content-card">
+              <div class="card-image">
+                <img width="200" height="300" src="https://img.freepik.com/free-photo/portrait-photo_144627-46580.jpg" alt="이미지"/>
+              </div>
+              <div class="card-rating">
+                <span>
+                  ★ 5.0
+                </span>
+                <span class="subtext">
+                  (62)
+                </span>
+                <div style="display: block; width: 3px; height: 3px; background-color: #ddd; border-radius: 50px; margin-left: 4px; margin-right: 4px;"></div>
+                <span class="subtext">
+                  일본
+                </span>
+              </div>
+              <div>
+                <span>현지 전문가와 함께하는 완벽한 맞춤 일본 여행 계획을 세워보...</span>
+              </div>
+              <div>
+                <span style="font-weight: 500;">최저가 ₩59,216 / 인</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contents">
+            <div class="content-card">
+              <div class="card-image">
+                <img 
+                  style="border-top-left-radius: 16px; border-top-right-radius: 16px;"
+                  width="200" 
+                  height="300" 
+                  src="https://img.freepik.com/free-photo/portrait-photo_144627-46580.jpg" 
+                  alt="이미지"
+                />
+              </div>
+              <div class="card-rating">
+                <span>
+                  ★ 5.0
+                </span>
+                <span class="subtext">
+                  (62)
+                </span>
+                <div style="display: block; width: 3px; height: 3px; background-color: #ddd; border-radius: 50px; margin-left: 4px; margin-right: 4px;"></div>
+                <span class="subtext">
+                  일본
+                </span>
+              </div>
+              <div>
+                <span>현지 전문가와 함께하는 완벽한 맞춤 일본 여행 계획을 세워보...</span>
+              </div>
+              <div>
+                <span style="font-weight: 500;">최저가 ₩59,216 / 인</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contents">
+            <div class="content-card">
+              <div class="card-image">
+                <img width="200" height="300" src="https://img.freepik.com/free-photo/portrait-photo_144627-46580.jpg" alt="이미지"/>
+              </div>
+              <div class="card-rating">
+                <span>
+                  ★ 5.0
+                </span>
+                <span class="subtext">
+                  (62)
+                </span>
+                <div style="display: block; width: 3px; height: 3px; background-color: #ddd; border-radius: 50px; margin-left: 4px; margin-right: 4px;"></div>
+                <span class="subtext">
+                  일본
+                </span>
+              </div>
+              <div>
+                <span>현지 전문가와 함께하는 완벽한 맞춤 일본 여행 계획을 세워보...</span>
+              </div>
+              <div>
+                <span style="font-weight: 500;">최저가 ₩59,216 / 인</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contents">
+            <div class="content-card">
+              <div class="card-image">
+                <img width="200" height="300" src="https://img.freepik.com/free-photo/portrait-photo_144627-46580.jpg" alt="이미지"/>
+              </div>
+              <div class="card-rating">
+                <span>
+                  ★ 5.0
+                </span>
+                <span class="subtext">
+                  (62)
+                </span>
+                <div style="display: block; width: 3px; height: 3px; background-color: #ddd; border-radius: 50px; margin-left: 4px; margin-right: 4px;"></div>
+                <span class="subtext">
+                  일본
+                </span>
+              </div>
+              <div>
+                <span>현지 전문가와 함께하는 완벽한 맞춤 일본 여행 계획을 세워보...</span>
+              </div>
+              <div>
+                <span style="font-weight: 500;">최저가 ₩59,216 / 인</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="content-article" style="margin-top: 3rem;">
+        <h1>베스트 셀러 체험</h3>
+
+        <div style="display: flex; gap: 16px; flex-direction: row; align-items: center;">
+
+          <div class="contents">
+            <div class="content-card">
+              <div class="card-image">
+                <img width="200" height="300" src="https://img.freepik.com/free-photo/portrait-photo_144627-46580.jpg" alt="이미지"/>
+              </div>
+              <div class="card-rating">
+                <span>
+                  ★ 5.0
+                </span>
+                <span class="subtext">
+                  (62)
+                </span>
+                <div style="display: block; width: 3px; height: 3px; background-color: #ddd; border-radius: 50px; margin-left: 4px; margin-right: 4px;"></div>
+                <span class="subtext">
+                  일본
+                </span>
+              </div>
+              <div>
+                <span>현지 전문가와 함께하는 완벽한 맞춤 일본 여행 계획을 세워보...</span>
+              </div>
+              <div>
+                <span style="font-weight: 500;">최저가 ₩59,216 / 인</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contents">
+            <div class="content-card">
+              <div class="card-image">
+                <img width="200" height="300" src="https://img.freepik.com/free-photo/portrait-photo_144627-46580.jpg" alt="이미지"/>
+              </div>
+              <div class="card-rating">
+                <span>
+                  ★ 5.0
+                </span>
+                <span class="subtext">
+                  (62)
+                </span>
+                <div style="display: block; width: 3px; height: 3px; background-color: #ddd; border-radius: 50px; margin-left: 4px; margin-right: 4px;"></div>
+                <span class="subtext">
+                  일본
+                </span>
+              </div>
+              <div>
+                <span>현지 전문가와 함께하는 완벽한 맞춤 일본 여행 계획을 세워보...</span>
+              </div>
+              <div>
+                <span style="font-weight: 500;">최저가 ₩59,216 / 인</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contents">
+            <div class="content-card">
+              <div class="card-image">
+                <img 
+                  style="border-top-left-radius: 16px; border-top-right-radius: 16px;"
+                  width="200" 
+                  height="300" 
+                  src="https://img.freepik.com/free-photo/portrait-photo_144627-46580.jpg" 
+                  alt="이미지"
+                />
+              </div>
+              <div class="card-rating">
+                <span>
+                  ★ 5.0
+                </span>
+                <span class="subtext">
+                  (62)
+                </span>
+                <div style="display: block; width: 3px; height: 3px; background-color: #ddd; border-radius: 50px; margin-left: 4px; margin-right: 4px;"></div>
+                <span class="subtext">
+                  일본
+                </span>
+              </div>
+              <div>
+                <span>현지 전문가와 함께하는 완벽한 맞춤 일본 여행 계획을 세워보...</span>
+              </div>
+              <div>
+                <span style="font-weight: 500;">최저가 ₩59,216 / 인</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contents">
+            <div class="content-card">
+              <div class="card-image">
+                <img width="200" height="300" src="https://img.freepik.com/free-photo/portrait-photo_144627-46580.jpg" alt="이미지"/>
+              </div>
+              <div class="card-rating">
+                <span>
+                  ★ 5.0
+                </span>
+                <span class="subtext">
+                  (62)
+                </span>
+                <div style="display: block; width: 3px; height: 3px; background-color: #ddd; border-radius: 50px; margin-left: 4px; margin-right: 4px;"></div>
+                <span class="subtext">
+                  일본
+                </span>
+              </div>
+              <div>
+                <span>현지 전문가와 함께하는 완벽한 맞춤 일본 여행 계획을 세워보...</span>
+              </div>
+              <div>
+                <span style="font-weight: 500;">최저가 ₩59,216 / 인</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contents">
+            <div class="content-card">
+              <div class="card-image">
+                <img width="200" height="300" src="https://img.freepik.com/free-photo/portrait-photo_144627-46580.jpg" alt="이미지"/>
+              </div>
+              <div class="card-rating">
+                <span>
+                  ★ 5.0
+                </span>
+                <span class="subtext">
+                  (62)
+                </span>
+                <div style="display: block; width: 3px; height: 3px; background-color: #ddd; border-radius: 50px; margin-left: 4px; margin-right: 4px;"></div>
+                <span class="subtext">
+                  일본
+                </span>
+              </div>
+              <div>
+                <span>현지 전문가와 함께하는 완벽한 맞춤 일본 여행 계획을 세워보...</span>
+              </div>
+              <div>
+                <span style="font-weight: 500;">최저가 ₩59,216 / 인</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="content-article" style="margin-top: 3rem;">
+        <h1>단체로 즐기기에 적합</h3>
+
+        <div style="display: flex; gap: 16px; flex-direction: row; align-items: center;">
+
+          <div class="contents">
+            <div class="content-card">
+              <div class="card-image">
+                <img width="200" height="300" src="https://img.freepik.com/free-photo/portrait-photo_144627-46580.jpg" alt="이미지"/>
+              </div>
+              <div class="card-rating">
+                <span>
+                  ★ 5.0
+                </span>
+                <span class="subtext">
+                  (62)
+                </span>
+                <div style="display: block; width: 3px; height: 3px; background-color: #ddd; border-radius: 50px; margin-left: 4px; margin-right: 4px;"></div>
+                <span class="subtext">
+                  일본
+                </span>
+              </div>
+              <div>
+                <span>현지 전문가와 함께하는 완벽한 맞춤 일본 여행 계획을 세워보...</span>
+              </div>
+              <div>
+                <span style="font-weight: 500;">최저가 ₩59,216 / 인</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contents">
+            <div class="content-card">
+              <div class="card-image">
+                <img width="200" height="300" src="https://img.freepik.com/free-photo/portrait-photo_144627-46580.jpg" alt="이미지"/>
+              </div>
+              <div class="card-rating">
+                <span>
+                  ★ 5.0
+                </span>
+                <span class="subtext">
+                  (62)
+                </span>
+                <div style="display: block; width: 3px; height: 3px; background-color: #ddd; border-radius: 50px; margin-left: 4px; margin-right: 4px;"></div>
+                <span class="subtext">
+                  일본
+                </span>
+              </div>
+              <div>
+                <span>현지 전문가와 함께하는 완벽한 맞춤 일본 여행 계획을 세워보...</span>
+              </div>
+              <div>
+                <span style="font-weight: 500;">최저가 ₩59,216 / 인</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contents">
+            <div class="content-card">
+              <div class="card-image">
+                <img 
+                  style="border-top-left-radius: 16px; border-top-right-radius: 16px;"
+                  width="200" 
+                  height="300" 
+                  src="https://img.freepik.com/free-photo/portrait-photo_144627-46580.jpg" 
+                  alt="이미지"
+                />
+              </div>
+              <div class="card-rating">
+                <span>
+                  ★ 5.0
+                </span>
+                <span class="subtext">
+                  (62)
+                </span>
+                <div style="display: block; width: 3px; height: 3px; background-color: #ddd; border-radius: 50px; margin-left: 4px; margin-right: 4px;"></div>
+                <span class="subtext">
+                  일본
+                </span>
+              </div>
+              <div>
+                <span>현지 전문가와 함께하는 완벽한 맞춤 일본 여행 계획을 세워보...</span>
+              </div>
+              <div>
+                <span style="font-weight: 500;">최저가 ₩59,216 / 인</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contents">
+            <div class="content-card">
+              <div class="card-image">
+                <img width="200" height="300" src="https://img.freepik.com/free-photo/portrait-photo_144627-46580.jpg" alt="이미지"/>
+              </div>
+              <div class="card-rating">
+                <span>
+                  ★ 5.0
+                </span>
+                <span class="subtext">
+                  (62)
+                </span>
+                <div style="display: block; width: 3px; height: 3px; background-color: #ddd; border-radius: 50px; margin-left: 4px; margin-right: 4px;"></div>
+                <span class="subtext">
+                  일본
+                </span>
+              </div>
+              <div>
+                <span>현지 전문가와 함께하는 완벽한 맞춤 일본 여행 계획을 세워보...</span>
+              </div>
+              <div>
+                <span style="font-weight: 500;">최저가 ₩59,216 / 인</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contents">
+            <div class="content-card">
+              <div class="card-image">
+                <img width="200" height="300" src="https://img.freepik.com/free-photo/portrait-photo_144627-46580.jpg" alt="이미지"/>
+              </div>
+              <div class="card-rating">
+                <span>
+                  ★ 5.0
+                </span>
+                <span class="subtext">
+                  (62)
+                </span>
+                <div style="display: block; width: 3px; height: 3px; background-color: #ddd; border-radius: 50px; margin-left: 4px; margin-right: 4px;"></div>
+                <span class="subtext">
+                  일본
+                </span>
+              </div>
+              <div>
+                <span>현지 전문가와 함께하는 완벽한 맞춤 일본 여행 계획을 세워보...</span>
+              </div>
+              <div>
+                <span style="font-weight: 500;">최저가 ₩59,216 / 인</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <footer>
+      <article style="display: flex; flex-direction: row; width: 100%; justify-content: space-between;">
+        <div class="footer-list">
+          <span style="font-weight: 500">에어비앤비 지원</span>
+          <li>
+            도움말 센터
+          </li>
+          <li>
+            에어커버
+          </li>
+          <li>
+            차별반대
+          </li>
+          <li>
+            장애인 지원
+          </li>
+          <li>
+            예약 취소 옵션
+          </li>
+          <li>
+            이웃 민원 신고
+          </li>
+        </div>
+
+        <div class="footer-list">
+          <span style="font-weight: 500">호스팅</span>
+          <li>
+            당신의 공간을 에어비앤비하세요
+          </li>
+          <li>
+            호스트를 위한 에어커버
+          </li>
+          <li>
+            호스팅 자료
+          </li>
+          <li>
+            커뮤니티 포럼
+          </li>
+          <li>
+            책임감 있는 호스팅
+          </li>
+          <li>
+            무료 호스팅 클래스 참여하기
+          </li>
+        </div>
+
+        <div class="footer-list">
+          <span style="font-weight: 500">에어비앤비</span>
+          <li>
+            뉴스룸
+          </li>
+          <li>
+            새로운 기능
+          </li>
+          <li>
+            채용 정보
+          </li>
+          <li>
+            투자자 정보
+          </li>
+          <li>
+            Airbnb 긴급 숙소
+          </li>
+        </div>
+      </article>
+      <article style="display: flex; flex-direction: row; justify-content: space-between; border-top:1px solid rgb(221, 221, 221) !important; padding-bottom: 40px;">
+        <div class="footer-left" style="display: flex; flex-direction: row; align-items: center; margin-top: 1.5rem; gap: 8px">
+          <span>
+            2024 Airbnb, Inc
+          </span>
+          <div style="display: flex; width: 2px; height: 2px; background-color: #1d1c1c; border-radius: 50px;"></div>
+          <li>개인정보 처리방침</li>
+          <div style="display: flex; width: 2px; height: 2px; background-color: #1d1c1c; border-radius: 50px;"></div>
+          <li>이용약관</li>
+          <div style="display: flex; width: 2px; height: 2px; background-color: #1d1c1c; border-radius: 50px;"></div>
+          <li>사이트맵</li>
+          <div style="display: flex; width: 2px; height: 2px; background-color: #1d1c1c; border-radius: 50px;"></div>
+          <li>회사 세부정보</li>
+        </div>
+        <div class="footer-right" style="display: flex; flex-direction: row; align-items: center; margin-top: 1.5rem; gap: 8px">
+          <li>개인정보 처리방침</li>
+          <div style="display: flex; width: 2px; height: 2px; background-color: #1d1c1c; border-radius: 50px;"></div>
+          <li>이용약관</li>
+        </div>
+
+      </article>
+    </footer>
+  </body>
+</html>
