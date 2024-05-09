@@ -16,6 +16,8 @@
 .loginTitleText {
   font-size: 12px;
   font-weight: 400;
+  color: #000;
+  line-height: 15px;
 }
 
 .loginButtonLayout {
