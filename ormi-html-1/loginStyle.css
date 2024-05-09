@@ -1,0 +1,63 @@
+
+.loginLayout {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  padding-left: 16px;
+  padding-right: 16px;
+  width: fit-content;
+  border: 1px solid #DBDBDB;
+  border-radius: 4px;
+  min-width: 350px;
+}
+
+.loginTitleText {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.loginButtonLayout {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #711BFF;
+  border-radius: 4px;
+  width: 100%;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  gap: 4px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.loginButtonText {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+  text-align: center;
+  color: #fff;
+  padding-top: 2px;
+}
+
+.loginSupportLayout {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.loginSupportLayout .items {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.loginSupportLayout a {
+  color: #767676;
+  font-size: 12px;
+  padding-top: 2px;
+  cursor: pointer;
+}
