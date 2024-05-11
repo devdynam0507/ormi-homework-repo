@@ -14,4 +14,22 @@
 
 .brand-ment1-layout {
     width: 100%;
+    margin-top: 46px;
+    margin-bottom: 78px;
+}
+
+.brand-ment2-root-layout {
+    margin-top: 78px;
+    margin-bottom: 102px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand-ment2-bg-layout {
+    height: fit-content;
+    background-image: var(--quote-bg-img);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
 }

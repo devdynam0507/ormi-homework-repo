@@ -4,6 +4,8 @@
     --logo-padding: 120px;
     --logo-area-height: 265px;
     --logo-area-half-height: 132px;
+
+    --quote-bg-img: url("../assets/svg/ic_quotes.svg");
 }
 
 * {

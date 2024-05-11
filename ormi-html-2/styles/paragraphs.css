@@ -6,3 +6,18 @@
     text-align: center;
     color: #F5DF4D;
 }
+
+.brand-ment2 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: #fff;
+    white-space: pre-line;
+}
+
+.brand-ment2 > b {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+}
