@@ -79,8 +79,19 @@
 
 .test-form-result-layout {
     margin-top: 147px;
+
     display: flex;
     flex-direction: column;
     gap: 17px;
     align-items: center;
+}
+
+.viral-layout {
+    margin-top: 127px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 18px;
+    justify-content: center;
 }
