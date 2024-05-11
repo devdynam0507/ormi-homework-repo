@@ -1,22 +1,23 @@
 
 .logo-layout {
-    padding-top: var(--logo-padding);
+    margin-top: var(--logo-padding);
     display: flex;
     flex-direction: column;
     position: relative;
+    height: 265px;
 }
 
 .logo-img-floating-bg {
     position: absolute;
     z-index: 1;
-    left: calc(282px - 130px / 2);
+    left: calc(282px - (var(--logo-area-half-height) / 2));
 }
 
 .logo-img-floating {
     position: absolute;
     z-index: 2;
     left: 50px;
-    top: calc(var(--logo-padding) + 70px);
+    top: calc(var(--logo-area-height) / 2 - 65px);
 }
 
 .logo-img-floating > img {

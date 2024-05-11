@@ -2,6 +2,8 @@
     --primary-color-bg: #5B2386;
 
     --logo-padding: 120px;
+    --logo-area-height: 265px;
+    --logo-area-half-height: 132px;
 }
 
 * {
