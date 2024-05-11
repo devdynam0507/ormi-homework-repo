@@ -61,6 +61,13 @@
     justify-content: center;
 }
 
+/* just wrapped */
+.test-form-item > label {
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+}
+
 .wrap-test-form-button-submit-layout {
     display: flex;
     flex-direction: column;
