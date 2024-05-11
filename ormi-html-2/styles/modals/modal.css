@@ -1,10 +1,10 @@
-.modal-backdrop {
+#modal-backdrop {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.4);
     z-index: var(--zindex-modal-backdrop);
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
 }

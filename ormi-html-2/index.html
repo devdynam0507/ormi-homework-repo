@@ -12,10 +12,12 @@
 
         <link rel="stylesheet" type="text/css" href="./styles/modals/modal.css"/>
         <link rel="stylesheet" type="text/css" href="./styles/modals/modal-goto-traning.css"/>
+
+        <script type="text/javascript" src="js/modal.js"></script>
     </head>
     <body>
         <main class="root-layout">
-            <div class="modal-backdrop">
+            <div id="modal-backdrop" onclick="closeIfOpenedAnyModalFound()">
                 <div class="modal-panel">
                     <div class="modal-goto-training">
                         <span class="title">
@@ -96,7 +98,7 @@
                 </article>
 
                 <article class="viral-layout">
-                    <button class="button-primary" type="button">
+                    <button class="button-primary" type="button" onclick="openOrCloseIfOpened('GoToTraining')">
                         <span>훈련하러 가기 GO!GO!</span>
                     </button>
 
