@@ -1,4 +1,15 @@
 
 .button-primary {
+    padding: 21px 49px;
+    width: fit-content;
+    background-color: #F5DF4D;
+    border-radius: 56px;
+    cursor: pointer;
+}
 
+.button-primary > span {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    color: #5B2386;
 }

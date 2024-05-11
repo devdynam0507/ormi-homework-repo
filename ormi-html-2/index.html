@@ -8,6 +8,7 @@
         <link rel="stylesheet" type="text/css" href="./styles/logo.css"/>
         <link rel="stylesheet" type="text/css" href="./styles/paragraphs.css"/>
         <link rel="stylesheet" type="text/css" href="./styles/forms.css">
+        <link rel="stylesheet" type="text/css" href="./styles/buttons.css">
     </head>
     <body>
         <main class="root-layout">
@@ -41,7 +42,7 @@
 
                 <!-- 훈련 일수 계산 영역 -->
                 <article class="test-form-layout">
-                    <div class="test-form-items-layout" style="gap: 27px;">
+                    <form class="test-form-items-layout" style="gap: 27px;" method="POST">
                         <div class="test-form-item">
                             <span class="test-form-item-text">나는</span>
                             <input type="text" class="input-testform" placeholder="예) 프로그래밍"/>
@@ -53,7 +54,12 @@
                             <input type="number" class="input-testform" placeholder="예) 5시간"/>
                             <span class="test-form-item-text">시간씩 훈련 할 것이다.</span>
                         </div>
-                    </div>
+                        <div class="wrap-test-form-button-submit-layout">
+                            <button class="button-primary" type="submit">
+                                <span>나는 며칠 동안 훈련을 해야 1만 시간이 될까?</span>
+                            </button>
+                        </div>
+                    </form>
                 </article>
             </div>
         </main>
