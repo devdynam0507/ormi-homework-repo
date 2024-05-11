@@ -2,7 +2,7 @@
 .button-primary {
     padding: 21px 49px;
     width: fit-content;
-    background-color: #F5DF4D;
+    background-color: var(--primary-yellow-color);
     border-radius: 56px;
     cursor: pointer;
 }
@@ -11,13 +11,13 @@
     font-weight: 700;
     font-size: var(--text-normal-size);
     line-height: 24px;
-    color: #5B2386;
+    color: var(--primary-color-bg);
 }
 
 .button-secondary {
     padding: 21px 49px;
     width: fit-content;
-    background-color: #fff;
+    background-color: var(--color-white);
     border-radius: 56px;
     cursor: pointer;
 }
@@ -26,5 +26,5 @@
     font-weight: 700;
     font-size: var(--text-normal-size);
     line-height: 24px;
-    color: #5B2386;
+    color: var(--primary-color-bg);
 }

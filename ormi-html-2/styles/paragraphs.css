@@ -4,7 +4,7 @@
     font-size: var(--text-medium-size);
     line-height: 39px;
     text-align: center;
-    color: #F5DF4D;
+    color: var(--primary-yellow-color);
     font-family: "OTEnjoystoriesBA", serif ;
 }
 
@@ -13,7 +13,7 @@
     font-size: var(--text-small-size);
     line-height: 18px;
     text-align: center;
-    color: #fff;
+    color: var(--color-white);
     white-space: pre-line;
 }
 
@@ -26,14 +26,14 @@
 .test-form-item-text {
     font-size: var(--text-normal-size);
     font-weight: var(--text-weight-bold);
-    color: #fff;
+    color: var(--color-white);
     width: fit-content;
 }
 
 .test-form-result-text {
     font-size: var(--text-normal-size);
     font-weight: var(--text-weight-normal);
-    color: #fff;
+    color: var(--color-white);
     width: fit-content;
 }
 
