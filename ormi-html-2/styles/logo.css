@@ -10,13 +10,16 @@
 .logo-img-floating-bg {
     position: absolute;
     z-index: 1;
-    left: calc(282px - (var(--logo-area-half-height) / 2));
+
+    /* align center => 50% - image-width / 2*/
+    left: calc(50% - 282px / 2)
 }
 
 .logo-img-floating {
     position: absolute;
     z-index: 2;
-    left: 50px;
+    /* align center => 50% - image-width / 2 - 가중치px */
+    left: calc(50% - 564px / 2 - 20px);
     top: calc(var(--logo-area-height) / 2 - 65px);
 }
 
