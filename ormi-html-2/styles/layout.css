@@ -13,6 +13,8 @@
 }
 
 .brand-ment1-layout {
+    display: flex;
+    align-items: center;
     width: 100%;
     margin-top: 46px;
     margin-bottom: 78px;
