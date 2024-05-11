@@ -17,3 +17,21 @@
 body {
     background-color: var(--primary-color-bg);
 }
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 130px;
+    padding-bottom: 70px;
+}
+
+footer p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: #fff;
+    white-space: pre-line;
+}
