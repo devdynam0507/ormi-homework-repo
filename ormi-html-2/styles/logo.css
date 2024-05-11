@@ -9,7 +9,7 @@
 .logo-img-floating-bg {
     position: absolute;
     z-index: 1;
-    left: 0;
+    left: calc(282px - 130px / 2);
 }
 
 .logo-img-floating {
@@ -22,4 +22,9 @@
 .logo-img-floating > img {
     width: 564px;
     height: 112px;
+}
+
+.logo-img-floating-bg > img {
+    width: 261px;
+    height: 265px;
 }
