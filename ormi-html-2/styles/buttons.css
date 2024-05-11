@@ -5,6 +5,7 @@
     background-color: var(--primary-yellow-color);
     border-radius: 56px;
     cursor: pointer;
+    border: none;
 }
 
 .button-primary > span {
@@ -27,4 +28,8 @@
     font-size: var(--text-normal-size);
     line-height: 24px;
     color: var(--primary-color-bg);
+}
+
+.button-effect-drop-shadow {
+    box-shadow: 0 0 10px 0 #00000080;
 }

@@ -15,9 +15,15 @@
     --text-normal-size: 24px;
     --text-medium-size: 36px;
     --text-big-size: 48px;
+    --text-xlarge: 72px;
+    --text-xxlarge: 96px;
 
     --text-weight-bold: 700;
     --text-weight-normal: 400;
+
+    --zindex-logo: 2;
+    --zindex-logo-bg: 1;
+    --zindex-modal-backdrop: 100;
 }
 
 * {

@@ -1,0 +1,32 @@
+
+.modal-goto-training {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-goto-training > .title {
+    font-weight: var(--text-weight-bold);
+    font-size: var(--text-xxlarge);
+    color: var(--primary-color-bg);
+    text-align: center;
+    font-family: "OTEnjoystoriesBA", serif ;
+    padding-left: 202px;
+    padding-right: 202px;
+}
+
+.modal-goto-training > .subtitle {
+    font-weight: var(--text-weight-bold);
+    font-size: var(--text-medium-size);
+    color: var(--primary-color-bg);
+    text-align: center;
+    font-family: "OTEnjoystoriesBA", serif ;
+}
+
+.modal-goto-training-button-layout {
+    margin-top: 74px;
+    display: inherit;
+    flex-direction: inherit;
+    align-items: inherit;
+}
+
