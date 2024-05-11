@@ -1,0 +1,14 @@
+
+/* 훈련시간 계산 공통 폼 */
+.input-testform {
+    border-radius: 8px;
+    padding: 18px 39px;
+    width: fit-content;
+    font-size: 24px;
+}
+
+.input-testform::placeholder {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 18px;
+}
