@@ -76,3 +76,11 @@
     /* 115px 만큼의 패딩 - 17px 의 gap*/
     padding-top: calc(115px - 17px);
 }
+
+.test-form-result-layout {
+    margin-top: 147px;
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    align-items: center;
+}

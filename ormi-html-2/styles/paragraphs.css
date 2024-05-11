@@ -28,3 +28,16 @@
     color: #fff;
     width: fit-content;
 }
+
+.test-form-result-text {
+    font-size: 24px;
+    font-weight: 400;
+    color: #fff;
+    width: fit-content;
+}
+
+.test-form-result-text > b {
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 24px;
+}
