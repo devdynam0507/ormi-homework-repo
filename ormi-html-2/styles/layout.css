@@ -43,11 +43,17 @@
     flex-direction: column;
 }
 
-.test-form-layout > .test-form-item {
+.test-form-layout > .test-form-items-layout {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 27px;
+}
+
+.test-form-items-layout  > .test-form-item {
+    gap: 17px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 17px;
-    width: 100%;
 }

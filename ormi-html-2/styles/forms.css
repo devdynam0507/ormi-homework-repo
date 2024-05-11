@@ -12,3 +12,7 @@
     font-weight: 400;
     line-height: 18px;
 }
+
+.input-testform:focus {
+    outline: none;
+}
