@@ -1,7 +1,7 @@
 
 .brand-ment1  {
     font-weight: 700;
-    font-size: 36px;
+    font-size: var(--text-medium-size);
     line-height: 39px;
     text-align: center;
     color: #F5DF4D;
@@ -10,7 +10,7 @@
 
 .brand-ment2 {
     font-weight: 400;
-    font-size: 14px;
+    font-size: var(--text-small-size);
     line-height: 18px;
     text-align: center;
     color: #fff;
@@ -19,19 +19,19 @@
 
 .brand-ment2 > b {
     font-weight: 700;
-    font-size: 24px;
+    font-size: var(--text-normal-size);
     line-height: 24px;
 }
 
 .test-form-item-text {
-    font-size: 24px;
+    font-size: var(--text-normal-size);
     font-weight: 700;
     color: #fff;
     width: fit-content;
 }
 
 .test-form-result-text {
-    font-size: 24px;
+    font-size: var(--text-normal-size);
     font-weight: 400;
     color: #fff;
     width: fit-content;
