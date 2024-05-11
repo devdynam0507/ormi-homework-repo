@@ -13,6 +13,9 @@
     --text-normal-size: 24px;
     --text-medium-size: 36px;
     --text-big-size: 48px;
+
+    --text-weight-bold: 700;
+    --text-weight-normal: 400;
 }
 
 * {

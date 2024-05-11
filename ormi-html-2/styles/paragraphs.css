@@ -1,6 +1,6 @@
 
 .brand-ment1  {
-    font-weight: 700;
+    font-weight: var(--text-weight-bold);
     font-size: var(--text-medium-size);
     line-height: 39px;
     text-align: center;
@@ -9,7 +9,7 @@
 }
 
 .brand-ment2 {
-    font-weight: 400;
+    font-weight: var(--text-weight-bold);
     font-size: var(--text-small-size);
     line-height: 18px;
     text-align: center;
@@ -18,27 +18,27 @@
 }
 
 .brand-ment2 > b {
-    font-weight: 700;
+    font-weight: var(--text-weight-bold);
     font-size: var(--text-normal-size);
     line-height: 24px;
 }
 
 .test-form-item-text {
     font-size: var(--text-normal-size);
-    font-weight: 700;
+    font-weight: var(--text-weight-bold);
     color: #fff;
     width: fit-content;
 }
 
 .test-form-result-text {
     font-size: var(--text-normal-size);
-    font-weight: 400;
+    font-weight: var(--text-weight-normal);
     color: #fff;
     width: fit-content;
 }
 
 .test-form-result-text > b {
-    font-weight: 700;
+    font-weight: var(--text-weight-bold);
     font-size: 72px;
     line-height: 24px;
 }

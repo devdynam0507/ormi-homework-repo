@@ -9,7 +9,7 @@
 
 .button-primary > span {
     font-weight: 700;
-    font-size: 24px;
+    font-size: var(--text-normal-size);
     line-height: 24px;
     color: #5B2386;
 }
@@ -24,7 +24,7 @@
 
 .button-secondary > span {
     font-weight: 700;
-    font-size: 24px;
+    font-size: var(--text-normal-size);
     line-height: 24px;
     color: #5B2386;
 }
