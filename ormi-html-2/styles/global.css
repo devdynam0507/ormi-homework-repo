@@ -1,3 +1,5 @@
+@import url('//fonts.googleapis.com/earlyaccess/notosanskr.css');
+
 :root {
     --primary-color-bg: #5B2386;
 
@@ -14,7 +16,22 @@
     width: 100%;
 }
 
+@font-face {
+    font-family: 'OTEnjoystoriesBA';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
+    font-family: "GmarketSansMedium", "OTEnjoystoriesBA", "Noto Sans KR", serif;
     background-color: var(--primary-color-bg);
 }
 
@@ -25,9 +42,11 @@ footer {
     justify-content: center;
     margin-top: 130px;
     padding-bottom: 70px;
+    gap: 20px;
 }
 
 footer p {
+    font-family: "Noto Sans KR", serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
