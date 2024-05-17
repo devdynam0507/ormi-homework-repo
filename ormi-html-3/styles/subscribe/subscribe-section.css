@@ -1,0 +1,118 @@
+
+.subscribe-container {
+    position: relative;
+    width: 100%;
+    height: 340px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../../assets/png/subscribe_bg.jpeg");
+    margin-top: 181px;
+}
+
+.backdrop-filter {
+    position: absolute;
+    width: 100%;
+    height: 340px;
+    background-color: #F2E9D8;
+    opacity: 0.6;
+    z-index: 1;
+}
+
+.scroll-floating-button {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    bottom: 19px;
+    right: 24px;
+    border-radius: 50px;
+    border: 1px solid #C4C4C4;
+    background-image: url("../../assets/svg/ic_arrow_up_inactive.svg");
+    z-index: 2;
+    background-color: #fff;
+
+    transition: 0.3s background-image;
+}
+
+.scroll-floating-button:hover {
+    background-image: url("../../assets/svg/ic_arrow_up_active.svg");
+}
+
+.subscribe-floating-box {
+    width: calc(100% - 320px - 58px - 64px);
+    position: absolute;
+    top: -100px;
+    z-index: 2;
+}
+
+.subscribe-floating-box > .floating-box-layout {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    background-color: #263140;
+    border-radius: 30px;
+    padding: 50px 64px 51px 58px;
+}
+
+.floating-box-layout > .floating-box-info-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.floating-box-layout h1 {
+    font-size: var(--text-large-size);
+    font-weight: var(--text-bold);
+    color: #fff;
+}
+
+.floating-box-layout .description {
+    font-size: var(--text-x-small-size);
+    font-weight: var(--text-normal);
+    color: #fff;
+    white-space: pre-wrap;
+}
+
+.floating-box-layout form {
+    width: 100%;
+    max-width: 540px;
+}
+
+.floating-box-layout input {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 64px;
+    width: calc(100% - 64px);
+    border-radius: 60px;
+
+    font-size: var(--text-small-size);
+    font-weight: var(--text-normal);
+    line-height: 20px;
+    color: #767676;
+}
+
+.floating-box-layout input::placeholder {
+    font-size: var(--text-small-size);
+    font-weight: var(--text-normal);
+    line-height: 20px;
+    color: #767676;
+}
+
+.email-input-label {
+    position: relative;
+}
+
+.email-input-label > .input-email-icon {
+    position: absolute;
+    left: 26px;
+    top: -3.5px;
+}
+
+.email-input-label > .input-submit-button {
+    position: absolute;
+    top: -15px;
+    right: 6px;
+}

@@ -23,6 +23,8 @@
     <link rel="stylesheet" type="text/css" href="./styles/gallery/gallery-layout.css"/>
 
     <link rel="stylesheet" type="text/css" href="./styles/map/map-layout.css"/>
+
+    <link rel="stylesheet" type="text/css" href="./styles/subscribe/subscribe-section.css"/>
   </head>
   <body>
     <!-- headers -->
@@ -105,6 +107,7 @@
       </article>
     </section>
 
+    <!-- gallery section -->
     <section>
       <article class="gallery-container">
         <div class="gallery-grid">
@@ -125,6 +128,7 @@
       </article>
     </section>
 
+    <!-- map section -->
     <section>
       <article class="map-container">
         <div class="map-header">
@@ -134,5 +138,36 @@
         <div class="mocking-map"></div>
       </article>
     </section>
+
+    <article class="subscribe-container">
+      <div class="backdrop-filter"></div>
+      <section style="position: relative">
+        <div class="subscribe-floating-box">
+          <div class="floating-box-layout">
+            <div class="floating-box-info-layout">
+              <h1>Subscribe to our Blog post</h1>
+              <!-- TODO: Should Refactoring -->
+              <p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+Lorem Ipsum has been the industry's standard dummy text
+              </p>
+            </div>
+            <form>
+              <label class="email-input-label">
+                <div class="input-email-icon">
+                  <img src="assets/svg/ic_email.svg" width="24" height="24" alt="이메일_아이콘"/>
+                </div>
+                <input type="email" placeholder="Enter your e-mail address">
+                <div class="input-submit-button">
+                  <button type="submit" class="common-button">
+                    <span>Subscribe</span>
+                  </button>
+                </div>
+              </label>
+            </form>
+          </div>
+        </div>
+      </section>
+      <div class="scroll-floating-button"></div>
+    </article>
   </body>
 </html>
