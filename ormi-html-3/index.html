@@ -19,8 +19,11 @@
     <link rel="stylesheet" type="text/css" href="./styles/sections/section-layout.css"/>
     <link rel="stylesheet" type="text/css" href="./styles/sections/section-box.css"/>
     <link rel="stylesheet" type="text/css" href="./styles/sections/event-text-section.css"/>
+
+    <link rel="stylesheet" type="text/css" href="./styles/gallery/gallery-layout.css"/>
   </head>
   <body>
+    <!-- headers -->
     <header>
       <article>
         <nav>
@@ -70,6 +73,7 @@
       </article>
     </header>
 
+    <!-- popular contents section -->
     <section>
       <article class="popular-content-layout">
         <!-- Background image hack -->
@@ -89,13 +93,33 @@
       </article>
     </section>
 
-    <!-- event text section  -->
+    <!-- event text section -->
     <section>
       <article class="event-text-layout">
         <h1>dummy text of the printing and dummy</h1>
         <p>Lorem Ipsum is simply <strong>dummy text</strong> of the printing and typesetting industry.
           Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
         </p>
+      </article>
+    </section>
+
+    <section>
+      <article class="gallery-container">
+        <div class="gallery-grid">
+          <div class="shadow-box gallery-img-box" style="background-image: url('./assets/png/img_cat2.jpeg')"></div>
+          <div class="shadow-box gallery-img-box" style="background-image: url('./assets/png/img_cat3.jpeg')"></div>
+          <div class="shadow-box gallery-img-box" style="background-image: url('./assets/png/img_cat4.jpeg')"></div>
+          <div class="shadow-box gallery-img-box" style="background-image: url('./assets/png/img_cat5.jpeg')"></div>
+          <div class="shadow-box gallery-img-box" style="background-image: url('./assets/png/img_cat6.jpeg')"></div>
+          <div class="shadow-box gallery-img-box" style="background-image: url('./assets/png/img_cat7.jpeg')"></div>
+        </div>
+
+        <div class="gallery-bottom">
+          <span>Continue exploring HODU</span>
+          <button class="common-button">
+            <span>Show more</span>
+          </button>
+        </div>
       </article>
     </section>
   </body>
