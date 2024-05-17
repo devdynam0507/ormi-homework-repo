@@ -14,6 +14,19 @@
     color: #fff;
 }
 
+.circle-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 9px;
+    border-radius: 50px;
+    background-color: var(--primary-sub-color);
+    width: fit-content;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
 @media all and (max-width: 430px) {
     .common-button > span {
         font-size: var(--text-x-small-size);
