@@ -1,10 +1,6 @@
-:root {
-    --primary-button-color: #D97652;
-}
-
 .common-button {
     padding: 15px 33px;
-    background-color: var(--primary-button-color);
+    background-color: var(--primary-color);
     border-radius: 40px;
     border: none;
     outline: none;
