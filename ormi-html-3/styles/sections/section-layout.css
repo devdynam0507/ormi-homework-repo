@@ -1,0 +1,88 @@
+section > .popular-content-layout {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    padding-top: 80px;
+    padding-bottom: 120px;
+
+    gap: 110px;
+}
+
+section > .popular-content-layout h1 {
+    color: #1d1c1c;
+    font-weight: var(--text-bold);
+    font-size: var(--text-large-size);
+    line-height: 45px;
+    white-space : pre-line;
+}
+
+section > .popular-content-layout p {
+    color: #1d1c1c;
+    font-weight: var(--text-normal);
+    font-size: var(--text-small-size);
+    line-height: 20px;
+    white-space : pre-line;
+}
+
+section > .popular-content-layout > .description-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+@media all and (min-width:1280px) {
+    section {
+        width: calc(100% - var(--side-padding-pc) * 2);
+        padding-left: var(--side-padding-pc);
+        padding-right: var(--side-padding-pc);
+    }
+}
+
+@media all and (min-width:1024px) {
+    section {
+        width: calc(100% - var(--side-padding-laptop) * 2);
+        padding-left: var(--side-padding-laptop);
+        padding-right: var(--side-padding-laptop);
+    }
+}
+
+@media all and (max-width: 430px) {
+    section {
+        width: calc(100% - var(--side-padding-mb) * 2);
+        padding-left: var(--side-padding-mb);
+        padding-right: var(--side-padding-mb);
+    }
+
+    section > .popular-content-layout {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        padding-top: 40px;
+
+        gap: 0;
+    }
+
+    section > .popular-content-layout h1 {
+        color: #1d1c1c;
+        font-weight: var(--text-bold);
+        font-size: var(--text-normal-size);
+        line-height: 30px;
+        white-space : pre-line;
+    }
+
+    section > .popular-content-layout p {
+        color: #1d1c1c;
+        font-weight: var(--text-normal);
+        font-size: var(--text-small-size);
+        line-height: 20px;
+        white-space : pre-line;
+    }
+
+    section > .popular-content-layout > .description-layout {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
