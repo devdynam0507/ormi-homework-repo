@@ -21,14 +21,22 @@
     <link rel="stylesheet" type="text/css" href="./styles/sections/event-text-section.css"/>
 
     <link rel="stylesheet" type="text/css" href="./styles/gallery/gallery-layout.css"/>
-
     <link rel="stylesheet" type="text/css" href="./styles/map/map-layout.css"/>
-
     <link rel="stylesheet" type="text/css" href="./styles/subscribe/subscribe-section.css"/>
-
     <link rel="stylesheet" type="text/css" href="./styles/footer/footer.css"/>
+
+    <link rel="stylesheet" type="text/css" href="./styles/modal/modal.css"/>
+    <link rel="stylesheet" type="text/css" href="./styles/modal/modal-cat.css"/>
+
+    <script type="text/javascript" src="./js/modal/modal.js"></script>
   </head>
-  <body>
+  <body style="position: relative">
+
+    <div id="modal-backdrop">
+      <div class="modal-panel fade-modal-enter-active">
+      </div>
+    </div>
+
     <!-- headers -->
     <header>
       <article>
@@ -46,7 +54,7 @@
                 Support
               </li>
             </div>
-            <button class="common-button">
+            <button class="common-button" onclick="openOrCloseIfOpened('Modal')">
               <span>Download</span>
             </button>
           </ul>
@@ -137,7 +145,7 @@
           <h1>Where you'll be</h1>
           <span class="description">330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea</span>
         </div>
-        <div class="mocking-map"></div>
+        <div id="map" class="mocking-map"></div>
       </article>
     </section>
 
@@ -153,14 +161,14 @@
 Lorem Ipsum has been the industry's standard dummy text
               </p>
             </div>
-            <form>
+            <form onsubmit="event.preventDefault()">
               <label class="email-input-label">
                 <div class="input-email-icon">
                   <img src="assets/svg/ic_email.svg" width="24" height="24" alt="이메일_아이콘"/>
                 </div>
                 <input type="email" placeholder="Enter your e-mail address">
                 <div class="input-submit-button">
-                  <button type="submit" class="common-button">
+                  <button type="submit" class="common-button" onclick="openOrCloseIfOpened('Modal')">
                     <span>Subscribe</span>
                   </button>
                 </div>
@@ -198,5 +206,29 @@ Lorem Ipsum has been the industry's standard dummy text
         <span>Terms of Use</span>
       </div>
     </footer>
+
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=your app key"></script>
+    <script>
+      let loaded = false;
+
+      const id = setInterval(() => {
+        try {
+          var container = document.getElementById('map');
+          var options = {
+            center: new kakao.maps.LatLng(33.450701, 126.570667),
+            level: 3
+          };
+
+          var map = new kakao.maps.Map(container, options);
+          loaded = true
+        } catch (e) {
+          console.error(e);
+        }
+
+        if (loaded) {
+          clearInterval(id);
+        }
+      }, 1000);
+    </script>
   </body>
 </html>

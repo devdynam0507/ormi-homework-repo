@@ -1,0 +1,59 @@
+:root {
+    --zindex-modal-backdrop: 100;
+}
+
+#modal-backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: var(--zindex-modal-backdrop);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.modal-panel {
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, 100%);
+    }
+
+    0% {
+        opacity: 0.5;
+        transform: translate(-50%, 20%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+}
+
+@keyframes slideOut {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+}
+
+.fade-modal-enter-active {
+    animation: slideIn 0.25s ease-out forwards;
+}
+
+.fade-modal-exit-active {
+    animation: slideOut 0.1s ease-out forwards;
+}

@@ -1,0 +1,49 @@
+
+.modal-cat-panel {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 600px;
+    background-image: url("../../assets/png/img_modal_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 9999;
+    box-shadow: 0 0 30px 0 #00000033;
+    border-radius: 30px;
+}
+
+.img-cat-face {
+    width: 110px;
+    height: 112px;
+}
+
+.modal-cat-panel > .heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.modal-cat-panel h1 {
+    font-size: var(--text-large-size);
+    font-weight: var(--text-bold);
+    color: var(--primary-color);
+}
+
+.modal-cat-panel .subtitle {
+    font-size: var(--text-x-small-size);
+    font-weight: var(--text-normal);
+    color: #1d1c1c;
+}
+
+.modal-cat-panel-button-wrapper {
+    padding-top: 38px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
