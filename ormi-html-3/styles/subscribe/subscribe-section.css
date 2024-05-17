@@ -72,7 +72,7 @@
 .floating-box-layout .description {
     font-size: var(--text-x-small-size);
     font-weight: var(--text-normal);
-    color: #fff;
+    color: #F2E9D8;
     white-space: pre-wrap;
 }
 
@@ -115,4 +115,96 @@
     position: absolute;
     top: -15px;
     right: 6px;
+}
+
+@media all and (max-width: 430px) {
+    .subscribe-container {
+        position: relative;
+        width: 100%;
+        height: 240px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-image: url("../../assets/png/subscribe_bg.jpeg");
+        margin-top: 320px;
+    }
+
+    .backdrop-filter {
+        position: absolute;
+        width: 100%;
+        height: 240px;
+        background-color: #F2E9D8;
+        opacity: 0.6;
+        z-index: 1;
+    }
+
+    .subscribe-floating-box {
+        width: calc(100% - 32px - 32px);
+        position: absolute;
+        top: -275px;
+        z-index: 2;
+    }
+
+    .subscribe-floating-box > .floating-box-layout {
+        padding-bottom: 84px;
+    }
+
+    .floating-box-layout h1 {
+        font-size: var(--text-normal-size);
+        font-weight: var(--text-bold);
+        color: #fff;
+    }
+
+    .subscribe-floating-box > .floating-box-layout {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        width: calc(100% - 64px);
+        background-color: #263140;
+        border-radius: 18px;
+
+        padding: 36px 32px 90px;
+    }
+
+    .floating-box-layout form {
+        width: 100%;
+    }
+
+    .floating-box-layout input {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 48px;
+        width: calc(100% - 48px);
+        border-radius: 60px;
+
+        font-size: var(--text-xx-small-size);
+        font-weight: var(--text-normal);
+        line-height: 20px;
+        color: #767676;
+    }
+
+    .floating-box-layout input::placeholder {
+        font-size: var(--text-xx-small-size);
+        font-weight: var(--text-normal);
+        line-height: 20px;
+        color: #767676;
+    }
+
+    .email-input-label > .input-email-icon {
+        position: absolute;
+        left: 18px;
+        top: -3.5px;
+    }
+
+    .email-input-label > .input-submit-button {
+        position: absolute;
+        right: 0;
+        top: 55px;
+    }
+
+    .scroll-floating-button {
+        display: none;
+    }
 }
