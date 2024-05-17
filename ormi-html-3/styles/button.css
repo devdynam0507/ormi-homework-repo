@@ -1,0 +1,27 @@
+:root {
+    --primary-button-color: #D97652;
+}
+
+.common-button {
+    padding: 15px 33px;
+    background-color: var(--primary-button-color);
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.common-button > span {
+    font-size: var(--text-small-size);
+    font-weight: var(--text-bold);
+    color: #fff;
+}
+
+@media all and (max-width: 430px) {
+    .common-button > span {
+        font-size: var(--text-x-small-size);
+        font-weight: var(--text-bold);
+        color: #fff;
+    }
+}

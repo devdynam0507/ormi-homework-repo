@@ -1,0 +1,17 @@
+:root {
+    --text-x-small-size: 14px;
+    --text-small-size: 16px;
+    --text-normal-size: 24px;
+    --text-medium-size: 36px;
+    --text-large-size: 48px;
+    --text-xlarge: 72px;
+    --text-xxlarge: 96px;
+
+    --text-bold: 700;
+    --text-normal: 400;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
