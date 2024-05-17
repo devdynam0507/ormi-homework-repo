@@ -1,0 +1,64 @@
+
+.map-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 68px;
+    gap: 20px;
+}
+
+.map-container > .map-header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.map-container h1 {
+    font-size: var(--text-large-size);
+    font-weight: var(--text-bold);
+    line-height: 45px;
+}
+
+.map-container .description {
+    color: var(--primary-gray-color);
+    font-size: var(--text-small-size);
+    font-weight: var(--text-semi-bold);
+}
+
+.mocking-map {
+    width: 100%;
+    height: 572px;
+    background-color: var(--primary-gray-color);
+}
+
+@media all and (max-width: 430px) {
+    .map-container {
+        display: flex;
+        flex-direction: column;
+        padding-top: 40px;
+        gap: 20px;
+    }
+
+    .map-container > .map-header {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .map-container h1 {
+        font-size: var(--text-normal-size);
+        font-weight: var(--text-bold);
+        line-height: 30px;
+    }
+
+    .map-container .description {
+        color: var(--primary-gray-color);
+        font-size: var(--text-small-size);
+        font-weight: var(--text-semi-bold);
+    }
+
+    .mocking-map {
+        width: 100%;
+        height: 132px;
+        background-color: var(--primary-gray-color);
+    }
+}

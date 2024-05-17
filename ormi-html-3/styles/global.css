@@ -8,9 +8,11 @@
     --text-xxlarge: 96px;
 
     --text-bold: 700;
+    --text-semi-bold: 500;
     --text-normal: 400;
 
     --primary-color: #D97652;
+    --primary-gray-color: #606367;
 }
 
 * {
