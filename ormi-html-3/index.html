@@ -29,6 +29,7 @@
     <link rel="stylesheet" type="text/css" href="./styles/modal/modal-cat.css"/>
 
     <script type="text/javascript" src="./js/modal/modal.js"></script>
+    <script type="text/javascript" src="./js/gallery.js"></script>
   </head>
   <body style="position: relative">
 
@@ -120,7 +121,7 @@
     <!-- gallery section -->
     <section>
       <article class="gallery-container">
-        <div class="gallery-grid">
+        <div id="galleries" class="gallery-grid">
           <div class="shadow-box gallery-img-box" style="background-image: url('./assets/png/img_cat2.jpeg')"></div>
           <div class="shadow-box gallery-img-box" style="background-image: url('./assets/png/img_cat3.jpeg')"></div>
           <div class="shadow-box gallery-img-box" style="background-image: url('./assets/png/img_cat4.jpeg')"></div>
@@ -131,7 +132,7 @@
 
         <div class="gallery-bottom">
           <span>Continue exploring HODU</span>
-          <button class="common-button">
+          <button class="common-button" onclick="fetchMoreGalleryPictures('galleries', 6)">
             <span>Show more</span>
           </button>
         </div>
@@ -156,7 +157,7 @@
           <div class="floating-box-layout">
             <div class="floating-box-info-layout">
               <h1>Subscribe to our Blog post</h1>
-              <!-- TODO: Should Refactoring -->
+              <!-- TODO: need to refactor -->
               <p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 Lorem Ipsum has been the industry's standard dummy text
               </p>
