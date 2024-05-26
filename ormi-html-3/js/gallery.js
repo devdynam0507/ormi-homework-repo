@@ -4,7 +4,6 @@ function createGalleryImage(url) {
     const div = document.createElement('div');
     div.className = 'shadow-box gallery-img-box';
     div.style.backgroundImage = `url("${url}")`;
-    console.log(url);
 
     return div;
 }
